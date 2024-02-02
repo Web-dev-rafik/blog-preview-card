@@ -1,0 +1,200 @@
+/* 1. Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 2. Colors */
+
+:root {
+  /* Primary */
+  --Yellow-clr: hsl(47, 88%, 63%);
+
+  /* Neutral */
+  --White-clr: hsl(0, 0%, 100%);
+  --Grey-clr: hsl(0, 0%, 50%);
+  --Black-clr: hsl(0, 0%, 7%);
+}
+
+/* 3. Typography */
+
+:root {
+  /* Family */
+  --ff: "Figtree", sans-serif; /* body */
+  --ff-h: "Figtree", sans-serif; /* headers */
+  /* Sizes */
+  --fs: 1rem; /* 16px by default */
+  --fs-h1: 1.25rem;
+  /* Weights */
+  --fw-sb: 600; /* semi-bold */
+  --fw-xb: 700; /* extra-bold */
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  line-height: 1.5;
+}
+
+.p {
+  font-size: var(--fs);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--ff-h);
+}
+
+.h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-xb);
+  line-height: 1.1;
+}
+
+.h2 {
+  font-size: var(--fs-h2);
+  line-height: 1.4;
+}
+
+/* Typography Media queries */
+
+/* Desktop : 640px */
+
+@media (min-width: 40em) {
+  :root {
+    --fs: 1rem;
+  }
+}
+
+/* 4. Utils */
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/* 5. Body */
+
+body {
+  background-color: var(--Yellow-clr);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 6.card */
+
+.card {
+  background-color: var(--White-clr);
+  border: 1px solid var(--Black-clr);
+  border-radius: 1.25rem;
+
+  width: min(375px, calc(100% - 2rem));
+
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  box-shadow: 8px 8px 0 0 var(--Black-clr);
+}
+
+.card-img {
+  border-radius: 0.75rem;
+}
+
+.card-type {
+  background-color: var(--Yellow-clr);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: calc(var(--fs) * 0.8);
+  font-weight: var(--fw-xb);
+}
+
+.card-date {
+  font-size: calc(var(--fs) * 0.8);
+}
+
+.card-title {
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: var(--Yellow-clr);
+}
+
+.card-desc {
+  color: var(--Grey-clr);
+}
+
+.card-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-author-avatar {
+  width: 40px;
+}
+
+.card-author-name {
+  font-weight: var(--fw-xb);
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
