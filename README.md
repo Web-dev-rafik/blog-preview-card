@@ -14,12 +14,12 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![]()
+![](https://github.com/Web-dev-rafik/blog-preview-card/blob/main/screenshot.png)
 
 ### Links
 
-- Solution URL: [Code on Github]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Code on Github](https://github.com/Web-dev-rafik/blog-preview-card)
+- Live Site URL: [Live site URL](https://web-dev-rafik.github.io/blog-preview-card/)
 
 ## My process
 
